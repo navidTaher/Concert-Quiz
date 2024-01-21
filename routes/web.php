@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/terms', function () {
-    return view('pages.terms');
-})->name('terms');
+Route::get('/prize', function () {
+    return view('Prize');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
