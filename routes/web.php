@@ -16,23 +16,27 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+Route::get('/scores', function () {
+    return view('pages.scores');
+})->name('scores');
 
 Route::get('/prize', function () {
     return view('pages.prize');
-});
+})->name('prize');
 
 Route::get('/prize-one', function () {
     return view('pages.prize-one');
-});
+})->name('prize-1');
 
 Route::get('/prize-two', function () {
     return view('pages.prize-two');
-});
+})->name('prize-2');
 
 Route::get('/prize-three', function () {
     return view('pages.prize-three');
-});
+})->name('prize-3');
 
 Route::get('/terms', function () {
     return view('pages.terms');

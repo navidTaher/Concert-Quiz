@@ -29,8 +29,8 @@
             </div>
         </div>
     </div>
-    <div class="flex justify-center items-center absolute bottom-0 left-0 right-0 pb-12 space-x-2">
-        <a href="#">
+    <div class="flex justify-center items-center absolute bottom-0 left-0 right-0 pb-6 space-x-2">
+        <a href="{{ route('welcome') }}">
             <x-primary-button>
                 Download
             </x-primary-button>

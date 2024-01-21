@@ -32,10 +32,12 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col items-center mt-12">
-        <x-primary-button>
-            Submit
-        </x-primary-button>
+    <div class="flex flex-col items-center absolute bottom-0 left-0 right-0 pb-32">
+        <a href="{{ route('prize-1') }}">
+            <x-primary-button>
+                Submit
+            </x-primary-button>
+        </a>
     </div>
 
     <div class="flex justify-center items-center w-full h-12 border-t-4 border-gray-900 absolute bottom-10 right-0">

@@ -16,8 +16,8 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col items-center absolute bottom-0 left-0 right-0 pb-12">
-        <a href="#">
+    <div class="flex flex-col items-center absolute bottom-0 left-0 right-0 pb-6">
+        <a href="{{ route('prize-2') }}">
             <x-primary-button>
                 Home
             </x-primary-button>
