@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-slot name="header">
         <h2 class="font-bold text-3xl text-black leading-tight">
-            {{ __('Terms and Conditions') }}
+            {{ __('Rules and Prize') }}
         </h2>
     </x-slot>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -9,10 +9,10 @@
             <div class="px-6 text-white">
                 <div class="max-h-[454px] overflow-y-auto border rounded-3xl p-4 bg-secondary">
                     <pre class="whitespace-pre-line text-sm font-bold">
-                        Terms and Conditions
+                        Rules and Prize
                         Last updated: January 14, 2024
 
-                        Please read these terms and conditions carefully
+                        Please read these rules carefully
                         before using Our Service.
 
                         Interpretation and Definitions
@@ -264,16 +264,14 @@
                     </svg>
                 </div>
                 <div class="p-2">
-                    <p class="text-lg font-bold">Agree with terms and conditions</p>
+                    <p class="text-lg font-bold">Agree with rules and prize</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="flex flex-col items-center absolute bottom-0 left-0 right-0 pb-6">
-        <a href="{{ route('rules') }}">
-            <x-primary-button>
-                Next
-            </x-primary-button>
-        </a>
+        <x-primary-button>
+            Next
+        </x-primary-button>
     </div>
 </x-guest-layout>

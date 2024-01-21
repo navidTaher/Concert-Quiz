@@ -22,6 +22,14 @@ Route::get('/prize', function () {
     return view('Prize');
 });
 
+Route::get('/terms', function () {
+    return view('pages.terms');
+})->name('terms');
+
+Route::get('/rules', function () {
+    return view('pages.rules');
+})->name('rules');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
