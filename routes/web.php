@@ -19,7 +19,19 @@ Route::get('/', function () {
 });
 
 Route::get('/prize', function () {
-    return view('Prize');
+    return view('pages.prize');
+});
+
+Route::get('/prize-one', function () {
+    return view('pages.prize-one');
+});
+
+Route::get('/prize-two', function () {
+    return view('pages.prize-two');
+});
+
+Route::get('/prize-three', function () {
+    return view('pages.prize-three');
 });
 
 Route::get('/terms', function () {
