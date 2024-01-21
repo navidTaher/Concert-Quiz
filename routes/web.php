@@ -22,6 +22,10 @@ Route::get('/scores', function () {
     return view('pages.scores');
 })->name('scores');
 
+Route::get('/message', function () {
+    return view('pages.message');
+})->name('message');
+
 Route::get('/prize', function () {
     return view('pages.prize');
 })->name('prize');

@@ -18,22 +18,20 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="antialiased bg-white h-dvh">
-    <div class="flex flex-col sm:justify-center items-center pt-20">
+    <div class="flex flex-col pl-20">
         <a href="/">
             <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
         </a>
     </div>
     @if (isset($header))
-        <header>
+        <header class="mt-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:justify-center items-center">
                 {{ $header }}
             </div>
         </header>
     @endif
     <div class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
-        <div class="w-full sm:max-w-md mt-6 overflow-hidden sm:rounded-lg">
-            {{ $slot }}
-        </div>
+        {{ $slot }}
     </div>
 </body>
 </html>
