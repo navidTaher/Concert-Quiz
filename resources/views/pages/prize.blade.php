@@ -38,7 +38,7 @@
         </x-primary-button>
     </div>
 
-    <div class="flex justify-center items-center w-full h-2 border-t-4 border-gray-900 absolute bottom-10 right-0">
+    <div class="flex justify-center items-center w-full h-12 border-t-4 border-gray-900 absolute bottom-10 right-0">
         <div class="flex items-center mt-10 space-x-2">
             <i class="fa-solid fa-clock"></i>
             <h2>Time reaming</h2>
