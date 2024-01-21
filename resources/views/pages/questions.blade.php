@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-slot name="header">
         <h2 class="font-bold text-3xl text-black leading-tight">
-            {{ __('Prize page') }}
+            {{ __('Questions') }}
         </h2>
     </x-slot>
     <div class="py-12">
