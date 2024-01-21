@@ -30,6 +30,14 @@ Route::get('/rules', function () {
     return view('pages.rules');
 })->name('rules');
 
+Route::get('/questions', function () {
+    return view('pages.questions');
+})->name('questions');
+
+Route::get('/results', function () {
+    return view('pages.results');
+})->name('results');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -270,8 +270,10 @@
         </div>
     </div>
     <div class="flex flex-col items-center absolute bottom-0 left-0 right-0 pb-6">
-        <x-primary-button>
-            Next
-        </x-primary-button>
+        <a href="{{ route('questions') }}">
+            <x-primary-button>
+                Next
+            </x-primary-button>
+        </a>
     </div>
 </x-guest-layout>
