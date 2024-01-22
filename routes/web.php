@@ -19,48 +19,59 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/scores', function () {
-    return view('pages.scores');
+    return view('pages.guests.scores');
 })->name('scores');
 
 Route::get('/message', function () {
-    return view('pages.message');
+    return view('pages.guests.message');
 })->name('message');
 
 Route::get('/prize', function () {
-    return view('pages.prize');
+    return view('pages.guests.prize');
 })->name('prize');
 
 Route::get('/prize-one', function () {
-    return view('pages.prize-one');
+    return view('pages.guests.prize-one');
 })->name('prize-1');
 
 Route::get('/prize-two', function () {
-    return view('pages.prize-two');
+    return view('pages.guests.prize-two');
 })->name('prize-2');
 
 Route::get('/prize-three', function () {
-    return view('pages.prize-three');
+    return view('pages.guests.prize-three');
 })->name('prize-3');
 
 Route::get('/terms', function () {
-    return view('pages.terms');
+    return view('pages.guests.terms');
 })->name('terms');
 
 Route::get('/rules', function () {
-    return view('pages.rules');
+    return view('pages.guests.rules');
 })->name('rules');
 
 Route::get('/questions', function () {
-    return view('pages.questions');
+    return view('pages.guests.questions');
 })->name('questions');
 
 Route::get('/results', function () {
-    return view('pages.results');
+    return view('pages.guests.results');
 })->name('results');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::get('/admin-questions', function () {
+    return view('pages.admin.admin-questions');
+})->middleware(['auth', 'verified'])->name('admin-questions');
+
+Route::get('/admin-participents', function () {
+    return view('pages.admin.admin-participents');
+})->middleware(['auth', 'verified'])->name('admin-participents');
+
+Route::get('/admin-winners', function () {
+    return view('pages.admin.admin-winners');
+})->middleware(['auth', 'verified'])->name('admin-winners');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
